@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/Image/WhatsApp Image 2023-02-24 at 08.31.33.jpeg">
+    <title>My Portofolio</title>
+    <style>
+        body {
+            background-color: #e5e5f7;
+            background-image: radial-gradient(#d4d4d5 2px, #e5e5f7 2px);
+            background-size: 40px 40px;
+        }
+
+        /* MEDIA QUERY */
+
+        @media screen and (min-width: 768px) and (max-width: 1240px) {
+            .navbar {
+                top: 5.5%;
+                padding: 1em 1em;
+                gap: 1em;
+            }
+
+            .navbar.open {
+                left: 6.5%
+            }
+
+            .contact-menu .contact-left {
+                margin-left: 1em;
+            }
+
+            .contact-menu .contact-right input,
+            textarea {
+                padding-right: 0em;
+            }
+
+            .container-footer .main-menu {
+                gap: 5em;
+            }
+
+            .container-footer .main-menu .left h2,
+            h5 {
+                font-size: 1rem;
+                line-height: 1em;
+            }
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 767px) {
+            .navbar {
+                top: 8%;
+                padding: 1em 1em;
+                gap: 1em;
+            }
+
+            .navbar.open {
+                left: 8.5%
+            }
+
+            .container-contact .contact-menu {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                justify-content: center;
+                align-items: top;
+                gap: 1em;
+            }
+
+            .contact-menu .contact-right input,
+            textarea {
+                padding-right: 0em;
+            }
+
+            .container-about .about img {
+                width: 250px;
+                height: 400px;
+                margin: auto;
+            }
+
+            .container-footer .main-menu {
+                gap: 5em;
+            }
+
+            .container-footer .main-menu .left h2,
+            h5 {
+                font-size: 1rem;
+                line-height: 1em;
+            }
+
+            .container-footer {
+                gap: 2em;
+                margin-top: 4em;
+                margin-bottom: 1em;
+            }
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 575px) {
+            * {
+                font-size: 0.9rem;
+            }
+
+            .container {
+                padding-bottom: 22em;
+                background-size: center;
+            }
+
+            .container-navbar {
+                padding: 1em 1em;
+            }
+
+            .navbar {
+                top: 5%;
+                padding: 0.5em 0.5em
+            }
+
+            .navbar.open {
+                left: 4%
+            }
+
+            .container-main h1 {
+                font-size: 1.2rem;
+                margin-top: 1em;
+            }
+
+            .container-about .about {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                text-align: center;
+                margin: 2em 0em;
+                transition: all 0.5s ease;
+            }
+
+            .container-contact .contact-menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 1em;
+            }
+
+            .contact-menu .contact-right input,
+            textarea {
+                padding: 0;
+                margin: 0;
+            }
+
+            .container-footer .main-menu .left h2,
+            h5 {
+                font-size: 1rem;
+                line-height: 1em;
+            }
+
+            .container-footer {
+                gap: 0;
+                margin-top: 4em;
+                margin-bottom: 1em;
+            }
+
+            .container-footer .main-menu {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 1em;
+                margin: auto;
+            }
+
+            .container-footer .main-menu .left {
+                margin: auto;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="container-navbar">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">My Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="menu-icon" class="menu-icon">
+                <img src="/Icons/menu (1).svg" alt="">
+            </div>
+            <div class="socmed">
+                <a href="https://www.facebook.com/profile.php?id=100089201033061" target="_blank"><img
+                        src="/Icons/facebook.svg" alt="Fb"></a>
+                <a href="https://www.instagram.com/erwansaputra08/" target="_blank"><img src="/Icons/instagram.svg"
+                        alt="Ig"></a>
+                <a href="https://www.linkedin.com/in/erwansaputra1999/" target="_blank"><img src="/Icons/linkedin.svg"
+                        alt="Twitter"></a>
+            </div>
+        </nav>
+        <main class="container-main">
+            <h1>
+                WELCOME TO MY PORTFOLIO
+            </h1>
+        </main>
+    </header>
+
+    <!-- ABOUT SECTION START -->
+    <section id="about" class="container-about">
+        <div class="about">
+            <img src="/Image/WhatsApp Image 2023-04-02 at 10.34.43.jpeg" alt="Foto Diri">
+            <div class="about-right">
+                <h2>ABOUT ME</h2>
+                <p>As a marine science graduate, I have extensive expertise and understanding of marine life and how
+                    humans can utilize marine resources. I have the ability to conduct research and analysis of marine
+                    issues, as well as being able to formulate innovative and sustainable solutions to maintain the
+                    sustainability of marine resources. I am also capable of using various applications related to my
+                    major.</p>
+                <p>Outside of my major, I have skills using Microsoft Office software and basic programming, such as
+                    Html, CSS and Javascript, so I have worked on several simple website projects.</p>
+                <a href="/Document/Erwan Saputra Resume.pdf" target="_self">
+                    <button>Lihat CV Saya</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT SECTION START -->
+    <section id="project" class="container-project">
+        <div class="main-menu">
+            <h2>MY PROJECT</h2>
+            <p>These are some of my simple web design projects that contain Html CSS and Javascript.
+            </p>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <a href="https://Tridc-Tour-Guide.erwansaputra4.repl.co" target="_blank">
+                    <img src="/Image/Screenshot (39).png" style="width:100%">
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="https://WarkopMacea.erwansaputra4.repl.co" target="_blank">
+                    <img src="/Image/Screenshot (37).png" style="width:100%">
+                </a>
+            </div>
+
+            <div class="mySlides fade">
+                <a href="https://Paselang-Indonesia.erwansaputra4.repl.co" target="_blank">
+                    <img src="/Image/Screenshot (36).png" style="width:100%">
+                </a>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION START -->
+    <section id="contact" class="container-contact">
+        <div class="main-menu">
+            <h2>CONTACT ME</h2>
+            <p>Keep In Touch</p>
+        </div>
+        <div class="contact-menu">
+            <div class="contact-left">
+                <div class="phone">
+                    <img src="/Icons/phone.svg" alt="Phone" style="width: 20px;">
+                    <div>
+                        <h3>Call Me</h3>
+                        <p>0823-4732-0256</p>
+                    </div>
+                </div>
+                <div class="email">
+                    <img src="/Icons/mail.svg" alt="Mail" style="width: 20px;">
+                    <div>
+                        <h3>Email</h3>
+                        <p>uchiha.erwan04@gmail.com</p>
+                    </div>
+                </div>
+                <div class="location">
+                    <img src="/Icons/map-pin.svg" alt="Location" style="width: 20px;">
+                    <div>
+                        <h3>Location</h3>
+                        <p>Grahanusa Residence, Mamuju, West Sulawesi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="input">
+                    <input type="text" name="nama" id="nama" placeholder="Name">
+                    <input type="text" name="email" id="email" placeholder="Email">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Project"></textarea>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <button>Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER START -->
+    <section class="container-footer">
+        <div class="main-menu">
+            <div class="left">
+                <h2>MY PORTFOLIO</h2>
+                <h5>Erwan Saputra</h5>
+            </div>
+            <div class="mid">
+                <a href="">About</a>
+                <a href="">My Project</a>
+                <a href="">Contact</a>
+            </div>
+            <div class="right">
+                <a href="https://www.facebook.com/profile.php?id=100089201033061" target="_blank"><img
+                        src="/Icons/facebook.svg" alt="Fb"></a>
+                <a href="https://www.instagram.com/erwansaputra08/" target="_blank"><img src="/Icons/instagram.svg"
+                        alt="Ig"></a>
+                <a href="https://www.linkedin.com/in/erwansaputra1999/" target="_blank"><img src="/Icons/linkedin.svg"
+                        alt="Twitter"></a>
+            </div>
+        </div>
+        <p>Created By <span>Erwan Saputra</span>| &copy; 2023 </p>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
