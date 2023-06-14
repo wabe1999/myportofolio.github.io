@@ -16,12 +16,12 @@
     }
 }
 
+body {
+    scroll-behavior: smooth;
+}
+
 .container {
     background-color: gray;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 28.5em;
 }
 
 .container-navbar {
@@ -104,11 +104,15 @@
 }
 
 .container-main h1 {
-    margin-top: 3em;
+    margin: 7em 0em;
     border: 5px solid;
 }
 
 /* ABOUT SECTION */
+
+.container-about {
+    margin-top: 3em;
+}
 
 .container-about .about {
     display: grid;
